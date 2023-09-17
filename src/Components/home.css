@@ -81,7 +81,7 @@
 }
 .Bookingheading h4{
     margin-top: -38px;
-    color: rgba(26, 46, 53, 1);
+    color: rgba(1, 85, 183, 1);
 }
 
 .slots{
@@ -120,7 +120,11 @@ margin-top: -20px;
     background-color: rgba(26, 46, 53, 1);
 }
 
-
+.spots{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .location-selector{
     margin-top: -10px;
     margin-bottom: 20px;
@@ -140,7 +144,7 @@ margin-top: -20px;
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 20px;
+ 
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
@@ -241,6 +245,7 @@ margin-top: -20px;
     }
     .mainBooking{
         flex-direction: column;
+        margin-top: 20px;
     }
     .Bookingheading{
         text-align: center;
@@ -250,6 +255,7 @@ margin-top: -20px;
     .Bookingheading h1{
         font-size: 30px;
     }
+  
     
     .textarea{
         display: flex;
