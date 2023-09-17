@@ -1,0 +1,120 @@
+.maincont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    height: 70;
+    font-family: 'Poppins', sans-serif;
+    z-index: 3;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.links {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(26, 46, 53, 1);
+    font-weight: 500;
+    transition: .2s ease-in-out;
+
+}
+
+.links a:hover {
+    color: rgba(1, 85, 183, 1);
+    transition: .2s ease-in-out;
+}
+
+.mainbottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    background: linear-gradient(45deg, #2f7bff, #021f41);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s linear infinite;
+
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.texts {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .maincont {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 40px;
+        height: 70;
+        font-family: 'Poppins', sans-serif;
+        z-index: 3;
+        position: sticky;
+        top: 0;
+        background-color: white;
+    }
+
+    .links a {
+        font-size: 17px;
+    }
+
+    .links {
+        width: 250px;
+    }
+
+    .mainbottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+        height: 300px;
+        color: white;
+        bottom: -300px;
+        font-size: 8px;
+        text-align: center;
+        background: linear-gradient(45deg, #2f7bff, #021f41);
+        background-size: 200% 200%;
+        animation: gradientAnimation 5s linear infinite;
+
+    }
+
+    .texts {
+        flex-direction: column;
+        height: 250px;
+    }
+}
