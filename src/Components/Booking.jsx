@@ -45,9 +45,8 @@ export const Booking = () => {
     setBookedSlots([...bookedSlots, ...selectedSlots]);
     setSelectedSlots([]);
     toggleDiv();
+    alert(`Payment initiated of rs ${selectedSlots.length * 50}`);
   };
-
-
 
   const [showDiv, setShowDiv] = useState(false);
 
@@ -55,6 +54,7 @@ export const Booking = () => {
     setShowDiv(!showDiv);
   };
 
+  
 
   return (
     <div className="mainBooking">
@@ -63,9 +63,10 @@ export const Booking = () => {
           Lets Book <br />
           Your Parking Slot
         </h1>
-        <h3>Location:</h3>
-        <br />
-        <h4>{selectedLocation.name}</h4>
+        <div className="locname">
+        <h3>Location:&nbsp;&nbsp;</h3><h4>{selectedLocation.name}</h4>
+
+        </div>
       </div>
       <div className="spots">
         <div className="textarea">
@@ -103,31 +104,35 @@ export const Booking = () => {
             </div>
             {selectedSlots.length > 0 && (
               <div className="pricecont">
-                
-                <button onClick={toggleDiv}>Book Now</button>
+                <button onClick={toggleDiv}>
+                  Book Now ({selectedSlots.length} selected)
+                </button>
                 <p></p>
               </div>
             )}
           </div>
 
-
           <div>
-          {showDiv && (
-        <div className="bookingContainer show">
-          <div className="bookingDiv show">
-            <p className="priceper">Price per Spot: 50</p>
-            <p>Total Payable Amount : {selectedSlots.length * 50}</p>
-          <button  className="book-button" onClick={handleBookSlots}>
-                  Book Now ({selectedSlots.length} selected)
-                </button>
-          <button onClick={toggleDiv} >Exit</button>
+            {showDiv && (
+              <div className="bookingContainer show">
+                <div className="bookingDiv show">
+                  <p className="priceper">Price per Spot: 50</p>
+                  <p>Total Payable Amount : {selectedSlots.length * 50}</p>
+                  <div className="modal">
+                    <div className="paymentbox">
+                      <h2>Pay Uisng UPI</h2>
+                      <p>Enter your UPI payment details:</p>
+                      <input type="text" placeholder="UPI ID" />
+                      <div className="paybuttons">
+                        <button onClick={handleBookSlots}>Pay</button>
+                        <button onClick={toggleDiv}>Exit</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
-        </div>
-      )}
-    </div>
-
-
-
         </div>
       </div>
     </div>

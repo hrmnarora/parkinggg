@@ -4,10 +4,16 @@ import './about.css';
 export const About = () => {
   return (
   <div className='abouttext'>
+    <div className="innerabout">
     <h1>
     Hey, Welcome to Parkitup 
     </h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero omnis explicabo, voluptates quam, esse neque soluta corrupti doloribus voluptatibus laborum enim aspernatur ipsam? Id at doloremque ratione sapiente officiis aliquamtus iusto unde suscipit porro. Laborum, enim explicabo tenetur accusantium autem provident eaque porroventore. Exercitationem, soluta voluptas? Exercitationem officiis nisi dicta, ipsa quasi tempore laudantium amet nobis quia? Quia dicta rem iusto consectetur, voluptas fuga et quisquam repellendus.</p>
-  </div>
+    <p>you can easily find available parking spaces in real-time using parkitup, reserve a spot in advance, and navigate directly to the parking location, saving time and reducing frustration. <br /> <br />
+The centralized management system allows operators to monitor parking occupancy, track revenue, and efficiently manage maintenance needs. This helps optimize parking operations, improve revenue generation, and enhance overall facility management.
+<br /><br />Parkitup provides valuable data on parking utilization, traffic patterns, and revenue generation. This information can be used to make informed decisions about parking infrastructure, optimize traffic flow, and improve urban planning.
+</p>
+    </div>
+    
+    </div>
   )
 }

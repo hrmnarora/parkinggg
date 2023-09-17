@@ -60,6 +60,7 @@
     color: rgb(255, 255, 255);
     font-weight: 900;
     transition: .2s ease-in-out;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 
 }
 .heading button:hover{
@@ -76,12 +77,17 @@
 }
 
 .Bookingheading h3{
-    margin-top: -20px;
     color: rgba(26, 46, 53, 1);
 }
 .Bookingheading h4{
-    margin-top: -38px;
     color: rgba(1, 85, 183, 1);
+}
+.locname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 
 .slots{
@@ -110,7 +116,8 @@ margin-top: -20px;
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    font-weight: 900;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    font-weight: bold;
     transition: .2s ease-in-out;
     margin-top: 20px;
     position: relative;
@@ -174,6 +181,18 @@ margin-top: -20px;
   
 .priceper{
     color: rgba(1, 85, 183, 1);
+}
+
+.paymentbox{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+.paymentbox input {
+    margin-bottom: 10px;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px;
+    padding: 2px 5px;
 }
 
 
@@ -254,6 +273,7 @@ margin-top: -20px;
     }
     .Bookingheading h1{
         font-size: 30px;
+        padding: 0;
     }
   
     
