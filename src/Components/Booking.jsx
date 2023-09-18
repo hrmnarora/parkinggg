@@ -119,7 +119,7 @@ export const Booking = () => {
                   <p>Total Payable Amount : {selectedSlots.length * 50}</p>
                   <div className="modal">
                     <div className="paymentbox">
-                      <h2>Pay Uisng UPI</h2>
+                      <h2>Pay Using UPI</h2>
                       <p>Enter your UPI payment details:</p>
                       <input type="text" placeholder="UPI ID" />
                       <div className="paybuttons">

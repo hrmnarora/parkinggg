@@ -146,6 +146,12 @@ margin-top: -20px;
     margin-top: -10px;
     margin-bottom: 20px;
 }
+.location-selector select{
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0px 3px;
+}
 
 .pricecont{
     display: flex;
@@ -266,9 +272,7 @@ margin-top: -20px;
     .mainimage video {
         mix-blend-mode: darken;
         position: absolute;
-        width: 100vw;
-     
-        right: 5vw;
+        width: 106vw;
         bottom: 0px;
         z-index: -1;
     }
