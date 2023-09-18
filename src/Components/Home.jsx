@@ -26,12 +26,13 @@ export const Home = () => {
       </button>
     </div>
     <div className="mainimage">
-    <video
+      <img src={mainimage} alt="mainimage" />
+    {/* <video
       src={video}
       autoPlay
       loop
       muted
-    />
+    /> */}
     </div>
     </div>
     
