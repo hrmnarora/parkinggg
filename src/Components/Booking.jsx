@@ -45,7 +45,7 @@ export const Booking = () => {
     setBookedSlots([...bookedSlots, ...selectedSlots]);
     setSelectedSlots([]);
     toggleDiv();
-    alert(`Payment initiated of rs ${selectedSlots.length * 50}`);
+    alert(`Slot Booked 😄 Payment initiated of rs ${selectedSlots.length * 50}`);
   };
 
   const [showDiv, setShowDiv] = useState(false);
@@ -53,8 +53,6 @@ export const Booking = () => {
   const toggleDiv = () => {
     setShowDiv(!showDiv);
   };
-
-  
 
   return (
     <div className="mainBooking">
@@ -64,13 +62,13 @@ export const Booking = () => {
           Your Parking Slot
         </h1>
         <div className="locname">
-        <h3>Location:&nbsp;&nbsp;</h3><h4>{selectedLocation.name}</h4>
-
+          <h3>Location:&nbsp;&nbsp;</h3>
+          <h4>{selectedLocation.name}</h4>
         </div>
       </div>
       <div className="spots">
         <div className="textarea">
-          <h3>Available Parking SLots</h3>
+          <h3>Available Parking Slots</h3>
           <div className="location-selector">
             <label>Select Location: </label>
             <select
@@ -102,21 +100,22 @@ export const Booking = () => {
                 />
               ))}
             </div>
-            {selectedSlots.length > 0 && (
-              <div className="pricecont">
-                <button onClick={toggleDiv}>
-                  Book Now ({selectedSlots.length} selected)
-                </button>
-                <p></p>
-              </div>
-            )}
+            <div className="pricecont">
+              <button onClick={toggleDiv}>
+                Book Now{"  "}
+                {selectedSlots.length > 0 && (
+                  <>: {selectedSlots.length} selected</>
+                )}
+              </button>
+              <p></p>
+            </div>
           </div>
 
           <div>
             {showDiv && (
               <div className="bookingContainer show">
                 <div className="bookingDiv show">
-                  <p className="priceper">Price per Spot: 50</p>
+                  <p className="priceper">Price per Slot: 50</p>
                   <p>Total Payable Amount : {selectedSlots.length * 50}</p>
                   <div className="modal">
                     <div className="paymentbox">
@@ -124,8 +123,16 @@ export const Booking = () => {
                       <p>Enter your UPI payment details:</p>
                       <input type="text" placeholder="UPI ID" />
                       <div className="paybuttons">
-                        <button onClick={handleBookSlots}>Pay</button>
-                        <button onClick={toggleDiv}>Exit</button>
+                        <button className="paybtn" onClick={handleBookSlots}>
+                          Pay
+                        </button>
+                        <button
+                          style={{ backgroundColor: "rgba(26, 46, 53, 1)" }}
+                          className="exit"
+                          onClick={toggleDiv}
+                        >
+                          Exit
+                        </button>
                       </div>
                     </div>
                   </div>

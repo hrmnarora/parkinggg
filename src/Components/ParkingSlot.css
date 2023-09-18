@@ -9,17 +9,20 @@
     margin: 5px;
     font-size: 18px;
     cursor: pointer;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
   }
   
   .available {
     background-color: rgba(1, 85, 183, 1);
-
     color: white;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0);
   }
   
   .filled {
-    background-color: lightgray;
+    background-color: rgb(212, 212, 212);
     color: black;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0);
   }
 /* Update ParkingSlot.css */
 

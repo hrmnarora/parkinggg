@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css"
 import mainimage from "./mainimage.png"
 import {useNavigate} from "react-router-dom";
+import video from "./mainvideo.mp4";
 
 export const Home = () => {
   let navigate = useNavigate();
@@ -25,7 +26,12 @@ export const Home = () => {
       </button>
     </div>
     <div className="mainimage">
-<img src={mainimage} alt="" />
+    <video
+      src={video}
+      autoPlay
+      loop
+      muted
+    />
     </div>
     </div>
     

@@ -48,6 +48,16 @@
     margin-top: -20px;
     color: rgba(26, 46, 53, 1);
 }
+.paybtn{
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+.paybuttons{
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+
+}
 .heading button{
     width: fit-content;
     border: none;
@@ -58,16 +68,15 @@
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    font-weight: 900;
     transition: .2s ease-in-out;
-    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
 
 }
+
 .heading button:hover{
     background-color: rgba(26, 46, 53, 1);
     transition: .2s ease-in-out;
 }
-.mainimage img {
+.mainimage video {
     mix-blend-mode: darken;
     position: absolute;
     width: 70vw;
@@ -84,7 +93,7 @@
 }
 .locname{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     margin-top: -30px;
     margin-bottom: 20px;
@@ -116,7 +125,6 @@ margin-top: -20px;
     font-weight: bold;
     cursor: pointer;
     color: rgb(255, 255, 255);
-    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
     font-weight: bold;
     transition: .2s ease-in-out;
     margin-top: 20px;
@@ -253,7 +261,7 @@ margin-top: -20px;
         padding: 5px;
         font-size: 16px;
     }
-    .mainimage img {
+    .mainimage video {
         mix-blend-mode: darken;
         position: absolute;
         width: 100vw;
@@ -292,5 +300,10 @@ margin-top: -20px;
         height: 328px;
         
     }
+    .locname{
+        justify-content: center;
+        
+    }
+   
     
 }
