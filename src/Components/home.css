@@ -167,7 +167,6 @@ margin-top: -20px;
     position: fixed;
     top: 0;
     left: 0;
- 
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
@@ -175,7 +174,7 @@ margin-top: -20px;
     opacity: 0; /* Initially hidden */
   }
   
-  .bookingDiv {
+  .bookingDiv{
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -191,7 +190,7 @@ margin-top: -20px;
 
   }
   
-  .bookingDiv.show {
+  .bookingDiv.show{
     transform: scale(1); /* Scale up to normal size */
   }
   
@@ -213,6 +212,61 @@ margin-top: -20px;
 
 
 
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .signupslayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+  }
+  .signupslayer.show{
+    opacity: 5;
+    z-index: 5;
+  }
+ .signups{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0); /* Initially scaled down */
+ }
+ .signups button{
+    margin:10px 20px;
+ }
+ .signups button:nth-child(2){
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    color: rgba(1, 85, 183, 1);
+    height: 40px;
+ }
+ .signups button:nth-child(2):hover{
+    color: rgba(26, 46, 53, 1);
+ }
+ .signups.show{
+    transform: scale(1); /* Scale up to normal size */
+ }
+
+
+  
 
 
 

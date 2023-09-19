@@ -11,6 +11,7 @@ export const Navbar = () => {
         <a href="/">Home</a>
         <a href="/booking">Book Now</a>
         <a href="/about">About</a>
+        <a className='serverlink' href="/server">Server</a>
         </div>
         
     </div>

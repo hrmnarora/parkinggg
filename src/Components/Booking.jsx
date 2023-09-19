@@ -1,6 +1,9 @@
 import React from "react";
 import ParkingSlot from "./ParkingSlot";
-import { useState } from "react";
+import { useState,useEffect } from "react";
+import { FaArrowDown } from "react-icons/fa";
+import { locations } from "./data";
+
 
 export const Booking = () => {
   const locations = [
@@ -20,6 +23,7 @@ export const Booking = () => {
       bookedSlots: [10, 25, 29],
     },
   ];
+
 
   const [selectedLocation, setSelectedLocation] = useState(locations[0]);
   const [selectedSlots, setSelectedSlots] = useState([]);
@@ -45,7 +49,9 @@ export const Booking = () => {
     setBookedSlots([...bookedSlots, ...selectedSlots]);
     setSelectedSlots([]);
     toggleDiv();
-    alert(`Slot Booked 😄 Payment initiated of rs ${selectedSlots.length * 50}`);
+    alert(
+      `Slot Booked 😄 Payment initiated of rs ${selectedSlots.length * 50}`
+    );
   };
 
   const [showDiv, setShowDiv] = useState(false);
@@ -53,6 +59,7 @@ export const Booking = () => {
   const toggleDiv = () => {
     setShowDiv(!showDiv);
   };
+
 
   return (
     <div className="mainBooking">
@@ -65,6 +72,7 @@ export const Booking = () => {
           <h3>Location:&nbsp;&nbsp;</h3>
           <h4>{selectedLocation.name}</h4>
         </div>
+        
       </div>
       <div className="spots">
         <div className="textarea">
@@ -140,6 +148,7 @@ export const Booking = () => {
               </div>
             )}
           </div>
+          
         </div>
       </div>
     </div>
