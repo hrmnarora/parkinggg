@@ -6,7 +6,10 @@
     height: 70;
     font-family: 'Poppins', sans-serif;
     z-index: 3;
-    /* background-color: white; */
+    position: sticky;
+    background-color: white;
+    top: 0;
+
 }
 .logo img {
     width: 150px;
@@ -54,7 +57,6 @@ a:active{
     background: linear-gradient(45deg, #2f7bff, #021f41);
     background-size: 200% 200%;
     animation: gradientAnimation 5s linear infinite;
-
 }
 
 @keyframes gradientAnimation {
