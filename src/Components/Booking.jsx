@@ -1,30 +1,12 @@
 import React from "react";
 import ParkingSlot from "./ParkingSlot";
 import { useState,useEffect } from "react";
-import { FaArrowDown } from "react-icons/fa";
 import { locations } from "./data";
 
 
+
 export const Booking = () => {
-  const locations = [
-    {
-      id: 1,
-      name: "Nexus Elante Mall",
-      totalSlots: 25,
-      bookedSlots: [3, 6, 9],
-    },
-    { id: 2, name: "Sukhna Lake", totalSlots: 15, bookedSlots: [1, 2, 7] },
-    { id: 3, name: "VR Punjab", totalSlots: 25, bookedSlots: [5, 12, 20] },
-    { id: 4, name: "Airport", totalSlots: 20, bookedSlots: [8, 15] },
-    {
-      id: 5,
-      name: "Bestech Square Mall",
-      totalSlots: 10,
-      bookedSlots: [10, 25, 29],
-    },
-  ];
-
-
+ 
   const [selectedLocation, setSelectedLocation] = useState(locations[0]);
   const [selectedSlots, setSelectedSlots] = useState([]);
   const [bookedSlots, setBookedSlots] = useState(selectedLocation.bookedSlots);
@@ -52,10 +34,10 @@ export const Booking = () => {
     alert(
       `Slot Booked 😄 Payment initiated of rs ${selectedSlots.length * 50}`
     );
+    console.log(locations[0].bookedSlots)
   };
 
   const [showDiv, setShowDiv] = useState(false);
-
   const toggleDiv = () => {
     setShowDiv(!showDiv);
   };

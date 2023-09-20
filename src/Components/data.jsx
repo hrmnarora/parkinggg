@@ -17,3 +17,4 @@ export const locations = [
       bookedSlots: [10, 25, 29],
     },
   ];
+

@@ -3,6 +3,8 @@ import "./home.css";
 import mainimage from "./mainimage.png";
 import { useNavigate } from "react-router-dom";
 import video from "./mainvideo.mp4";
+import MapComponent from "./MapComponent";
+
 import { useState } from "react";
 export const Home = () => {
   let navigate = useNavigate();
@@ -19,7 +21,17 @@ export const Home = () => {
   const toggleDiv = () => {
     setDivVisible(!isDivVisible);
   };
-
+  const locations = [
+    {
+      lat : 30.7333,
+      lng : 76.7794,
+      pricing:50,
+      id: 1,
+      name: "Nexus Elante Mall",
+      totalSlots: 25,
+      bookedSlots: [3, 6, 9],
+    },
+  ];
   return (
     <div className="main">
       <div className="heading">
@@ -46,19 +58,21 @@ export const Home = () => {
                 <button onClick={handleClick2} className="loginasserver">
                   Login As Server
                 </button>
+
               </div>
             </div>
           )}
         </div>
       </div>
       <div className="mainimage">
-        <img src={mainimage} alt="mainimage" />
-        {/* <video
+      {/* <MapComponent locations = {locations} /> */}
+        {/* <img src={mainimage} alt="mainimage" /> */}
+        <video
       src={video}
       autoPlay
       loop
       muted
-    /> */}
+    />
       </div>
     </div>
   );

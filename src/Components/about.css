@@ -3,26 +3,60 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.abouttext{
+.aboutcont{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 80vw;
-   
-
-
+    flex-direction: row;
+    height: 70vh;
 }
-.innerabout{
-    width: 60vw;
+.aboutimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutimg img{
+    width: 40vw;
+}
+.abouttext{
+    width: 50vw;
+}
+@media only screen and (max-width: 1000px){
+
+    .aboutimg img{
+        width: 350px;
+    }
+    .abouttext{
+        width: 50vw;
+        font-size: 10px;
+    }
+    
 }
 @media only screen and (max-width: 600px){
-    .abouttext{
-        width: 100vw;
-        font-size: 13px;
+
+    .aboutcont{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 70vh;
     }
-    .innerabout{
-        width: 90vw;
+    .aboutimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .aboutimg img{
+        width: 30vh;
+    }
+    .abouttext{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 80vw;
     }
     
 }
