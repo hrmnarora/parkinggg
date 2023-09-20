@@ -6,6 +6,7 @@ import video from "./mainvideo.mp4";
 import MapComponent from "./MapComponent";
 
 import { useState } from "react";
+import { Bottom } from "./Bottom";
 export const Home = () => {
   let navigate = useNavigate();
 
@@ -74,6 +75,7 @@ export const Home = () => {
       muted
     />
       </div>
+      <Bottom/>
     </div>
   );
 };

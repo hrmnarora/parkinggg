@@ -5,7 +5,6 @@ import { Booking } from './Components/Booking';
 import React from 'react';
 
 import { BrowserRouter,Route,Routes } from 'react-router-dom';
-import { Bottom } from './Components/Bottom';
 import { About } from './Components/about';
 import Server from './Components/Server';
 
@@ -21,7 +20,6 @@ function App() {
 
 
     </Routes>
-    <Bottom/>
     </BrowserRouter>
   );
 }
