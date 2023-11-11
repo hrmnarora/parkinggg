@@ -1,7 +1,4 @@
-// ParkingSlot.js
-
-import React, { useState } from 'react';
-import './ParkingSlot.css';
+import "./ParkingSlot.css";
 
 const ParkingSlot = ({ id, isAvailable, isSelected, onSelectSlot }) => {
   const handleClick = () => {
@@ -12,7 +9,9 @@ const ParkingSlot = ({ id, isAvailable, isSelected, onSelectSlot }) => {
 
   return (
     <div
-      className={`parking-slot ${isAvailable ? (isSelected ? 'selected' : 'available') : 'filled'}`}
+      className={`parking-slot ${
+        isAvailable ? (isSelected ? "selected" : "available") : "filled"
+      }`}
       onClick={handleClick}
     >
       {id}

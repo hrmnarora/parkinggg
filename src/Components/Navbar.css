@@ -11,6 +11,9 @@
     top: 0;
 
 }
+.menu-icon{
+    display: none;
+}
 .logo img {
     width: 150px;
 }
@@ -88,14 +91,17 @@ a:active{
         align-items: center;
         flex-direction: column;
         padding: 10px 40px;
-        height: 70;
+        height: 70px;
         font-family: 'Poppins', sans-serif;
         z-index: 3;
         position: sticky;
         top: 0;
         background-color: white;
-    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.05);
+        box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.05);
+    }
 
+    .menu-icon{
+        display: block;
     }
 
     .links a {

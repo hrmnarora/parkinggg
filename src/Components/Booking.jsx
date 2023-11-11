@@ -1,10 +1,8 @@
 import React from "react";
 import ParkingSlot from "./ParkingSlot";
-import { useState,useEffect } from "react";
+import { useState} from "react";
 import { locations } from "./data";
 import { Bottom } from "./Bottom";
-
-
 
 export const Booking = () => {
  
