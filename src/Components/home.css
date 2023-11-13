@@ -13,7 +13,6 @@
     height: 70vh;
     font-family: 'Poppins', sans-serif;
 
-
 }
 
 .heading {
@@ -303,7 +302,7 @@ margin-top: -20px;
         width: 80vw;
         flex-direction: column;
         margin-left: 0px;
-        margin-top: 90px;
+        margin-top: 150px;
         text-align: center;
         justify-content: center;
         align-items: center;
